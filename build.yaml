@@ -1,7 +1,10 @@
 include:
   - board: seeeduino_xiao_ble
-    shield: totem_left
+    shield: pulso_left
   - board: seeeduino_xiao_ble
-    shield: totem_right
-  
+    shield: pulso_right
+  - board: nice_nano
+    shield: pulso_dongle dongle_display
+    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+    artifact-name: pulso_dongle_with_logging
 # there is no settingsreset (needed) for the XIAO
